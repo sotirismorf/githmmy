@@ -1,0 +1,38 @@
+site_name: githmmy
+docs_dir: docs
+
+theme:
+  name: 'material'
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+  features:
+    - navigation.sections
+    - navigation.instant
+    - toc.follow
+
+extra:
+  generator: false
+
+nav:
+  - 4ο Εξάμηνο:
+    - prob-stat.md
+  - 5ο Εξάμηνο:
+    - she-1.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
