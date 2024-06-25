@@ -1,8 +1,14 @@
 site_name: githmmy
+site_url: https://sotirismorf.github.io/githmmy
 docs_dir: docs
+repo_url: https://github.com/sotirismorf/githmmy
+repo_name: sotirismorf/githmmy
+edit_uri: edit/main/docs/
 
 theme:
   name: 'material'
+  icon:
+    logo: material/hammer-sickle
   palette:
     scheme: slate
     primary: black
@@ -11,11 +17,13 @@ theme:
     - navigation.sections
     - navigation.instant
     - toc.follow
+    - content.action.edit
 
 extra:
   generator: false
 
 nav:
+  - Αρχική: index.md
   - 4ο Εξάμηνο:
     - prob-stat.md
   - 5ο Εξάμηνο:
