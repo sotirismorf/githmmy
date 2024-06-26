@@ -17,7 +17,6 @@ theme:
     - navigation.sections
     - navigation.instant
     - toc.follow
-    - content.action.edit
 
 extra:
   generator: false
@@ -27,7 +26,9 @@ nav:
   - 4ο Εξάμηνο:
     - prob-stat.md
   - 5ο Εξάμηνο:
-    - she-1.md
+    - Συστήματα Ηλεκτρικής Ενέργειας Ι:
+      - Ερωτήσεις θεωρίας: she-1-theoria.md
+      - Θέματα Εξετάσεων: she-1-themata.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -36,6 +37,10 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tilde
 
 extra_javascript:
   - javascripts/katex.js
