@@ -1,0 +1,830 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sotirismorf.github.io/githmmy/prob-stat/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../she-1-theoria/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Θεωρία Πιθανοτήτων και Στατιστική - githmmy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#θεωρία-πιθανοτήτων-και-στατιστική" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="githmmy" class="md-header__button md-logo" aria-label="githmmy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 20.59 20.59 22l-3.14-3.14c-.56.37-1.15.7-1.79.92-1.66.58-3.46.62-5.13.1-1.03-.3-1.97-.83-2.78-1.51l-3.19 3.19c-.56.59-1.53.59-2.12 0-.58-.56-.58-1.56 0-2.12l3.38-3.38 2.65-.52a6.1 6.1 0 0 0 2.81 1.96c1.16.35 2.44.34 3.59-.04.29-.09.57-.2.83-.34L7.6 9l-1.77 1.78L3 7.95 7.95 3l4.24 1.41L9 7.6l8.31 8.29c.19-.18.34-.36.49-.56 1.5-1.97 1.62-4.91.29-7.33C16.78 5.57 14.5 3.55 12 2c1.41.5 2.76 1.17 4 2.04 1.24.87 2.43 1.89 3.33 3.21.9 1.29 1.54 2.87 1.67 4.54.1 1.68-.34 3.44-1.3 4.86-.2.35-.46.63-.7.91l3 3.03Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            githmmy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Θεωρία Πιθανοτήτων και Στατιστική
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sotirismorf/githmmy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sotirismorf/githmmy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="githmmy" class="md-nav__button md-logo" aria-label="githmmy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 20.59 20.59 22l-3.14-3.14c-.56.37-1.15.7-1.79.92-1.66.58-3.46.62-5.13.1-1.03-.3-1.97-.83-2.78-1.51l-3.19 3.19c-.56.59-1.53.59-2.12 0-.58-.56-.58-1.56 0-2.12l3.38-3.38 2.65-.52a6.1 6.1 0 0 0 2.81 1.96c1.16.35 2.44.34 3.59-.04.29-.09.57-.2.83-.34L7.6 9l-1.77 1.78L3 7.95 7.95 3l4.24 1.41L9 7.6l8.31 8.29c.19-.18.34-.36.49-.56 1.5-1.97 1.62-4.91.29-7.33C16.78 5.57 14.5 3.55 12 2c1.41.5 2.76 1.17 4 2.04 1.24.87 2.43 1.89 3.33 3.21.9 1.29 1.54 2.87 1.67 4.54.1 1.68-.34 3.44-1.3 4.86-.2.35-.46.63-.7.91l3 3.03Z"/></svg>
+
+    </a>
+    githmmy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sotirismorf/githmmy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sotirismorf/githmmy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Αρχική
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    4ο Εξάμηνο
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            4ο Εξάμηνο
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Θεωρία Πιθανοτήτων και Στατιστική
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Θεωρία Πιθανοτήτων και Στατιστική
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2022-ομάδα-β" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2022 Ομάδα Β
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2022 Ομάδα Β">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2022-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2022, Ομάδα Α
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2022, Ομάδα Α">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-1ο" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 1ο
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ιούν-2023-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ιούν. 2023, Ομάδα Α
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2023-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2023, Ομάδα Α
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2023, Ομάδα Α">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-1ο_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 1ο
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    5ο Εξάμηνο
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            5ο Εξάμηνο
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Συστήματα Ηλεκτρικής Ενέργειας Ι
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Συστήματα Ηλεκτρικής Ενέργειας Ι
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../she-1-theoria/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ερωτήσεις θεωρίας
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../she-1-themata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Θέματα Εξετάσεων
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2022-ομάδα-β" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2022 Ομάδα Β
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2022 Ομάδα Β">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2022-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2022, Ομάδα Α
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2022, Ομάδα Α">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-1ο" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 1ο
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ιούν-2023-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ιούν. 2023, Ομάδα Α
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#σεπτ-2023-ομάδα-α" class="md-nav__link">
+    <span class="md-ellipsis">
+      Σεπτ. 2023, Ομάδα Α
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Σεπτ. 2023, Ομάδα Α">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-1ο_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 1ο
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#θέμα-2ο_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Θέμα 2ο
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="θεωρία-πιθανοτήτων-και-στατιστική">Θεωρία Πιθανοτήτων και Στατιστική</h1>
+<h2 id="σεπτ-2022-ομάδα-β">Σεπτ. 2022 Ομάδα Β</h2>
+<h3 id="θέμα-2ο">Θέμα 2ο</h3>
+<p><strong>Λύση</strong></p>
+<p>(α) 
+$$ P(\bar{B}_{\text{day}}) = 1 - P(B) = 1 - 0.01 = 0.99 $$
+$$ P(\bar{B}_{\text{month}}) = 0.99^{30} \approx 0.7397 $$
+$$ P(B_{\text{month}}) = 1 - P(\bar{B}_{\text{month}}) = 1 - 0.7397 = 0.2603 $$</p>
+<p>β)
+$$ P(X = 3) = (1 - p)^x p = (1 - 0.26)^3 \cdot 0.26 = 0.1053 $$</p>
+<p>γ)
+$$ P(\bar{B} \cup B_{\text{minimum}}) = 
+(1 - 0.26)^3 \cdot 0.26 \cdot (1 - 0.26)^2 = 0.015 $$</p>
+<p>δ)
+$$ P(X = k) = \binom{n}{k} p^k (1 - p)^{n-k} $$
+$$
+P(X = 2) = \binom{10}{2} \cdot 0.26^2 \cdot (1 - 0.26)^8
+= 45 \cdot \frac{169}{2500} \cdot 0.08791 \approx 0.2735
+$$</p>
+<h2 id="σεπτ-2022-ομάδα-α">Σεπτ. 2022, Ομάδα Α</h2>
+<h3 id="θέμα-1ο">Θέμα 1ο</h3>
+<p>Ένας ηλεκτρικός πίνακας περιέχει 25 ασφάλειες από τις οποίες οι 5 είναι
+καμμένες. Αφαιρούμε τυχαία μία ασφάλεια και στη συνέχεια μια άλλη. Να
+υπολογιστούν οι πιανότητες:</p>
+<p>(α) Τουλάχιστον μία από τις δύο ασφάλειες να ήταν καμμένη.</p>
+<p>(β) Ακριβώς μια από τις δύο ασφάλειες ήταν καμμένη.</p>
+<p>[2 μονάδες]</p>
+<h3 id="θέμα-2ο_1">Θέμα 2ο</h3>
+<div class="arithmatex">\[ P(x \geq 1) = 1 - P(x = 0) \]</div>
+<h2 id="ιούν-2023-ομάδα-α">Ιούν. 2023, Ομάδα Α</h2>
+<h2 id="σεπτ-2023-ομάδα-α">Σεπτ. 2023, Ομάδα Α</h2>
+<h3 id="θέμα-1ο_1">Θέμα 1ο</h3>
+<h3 id="θέμα-2ο_2">Θέμα 2ο</h3>
+<p>Ο χρόνος ping είναι ο χρόνος που κάνει ένα μικρό πακέτο πληροφορίας να πάει από
+έναν εξυπηρετητή σε έναν άλλον και να ξαναγυρίσει. Εδώ θεωρούμε ως τυχαία
+μεταβλητή <span class="arithmatex">\(X\)</span> το χρόνο ping που μετριέται κάθε λεπτό της ώρας, ping/min και
+θεωρούμε πως ακολουθεί εκθετική κατανομή. Το δίκτυο θεωρείται υπερφορτωμένο όταν
+ο χρόνος ping (για κάποιο λεπτό της ώρας) ξεπεράσει τα 20ms. Γνωρίζουμε πως ο
+χρόνος ping σε ένα (οποιοδήποτε) λεπτό της ώρας ξεπερνά τα 10ms με πιθανότητα
+0.2, δηλαδή <span class="arithmatex">\(P(X &gt; 10) = 0.20\)</span>.</p>
+<p>(α) Ποια είναι η πιθανότητα υπερφόρτωσης του δικτύου σε ένα (οποιοδήποτε) λεπτό
+της ώρας (σε ακρίβεια δευτέρου δεκαδικού);</p>
+<p>(β) Ποια είναι η περίοδος εμφάνισης της υπερφόρτωσης του δικτύου, δηλαδή ο
+αναμενόμενος αριθμός λεπτών της ώρας μεταξύ δύο διαδοχικών υπερφορτώσεων;</p>
+<p>(γ) Αν παρατηρήσουμε από τώρα τον χρόνο ping ανά λεπτό της ώρας, να υπολογίσετε
+την πιθανότητα ότι η τρίτη υπερφόρτωση θα συμβεί σε δέκα ακριβώς λεπτά;</p>
+<p>[2 μονάδες]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.instant", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
