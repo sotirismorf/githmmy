@@ -29,6 +29,8 @@ nav:
     - Συστήματα Ηλεκτρικής Ενέργειας Ι:
       - Ερωτήσεις θεωρίας: she-1-theoria.md
       - Θέματα Εξετάσεων: she-1-themata.md
+  - 6ο Εξάμηνο:
+    - Ανάλυση και Σχεδιασμός Αλγορίθμων: algorithms.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -49,3 +51,8 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+
+# plugins:
+#   - enumerate-headings:
+#       toc_depth: 2
+#       increment_across_pages: false
